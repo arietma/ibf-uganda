@@ -55,7 +55,7 @@ saveRDS(floodscan_df, sprintf("%s/data/floodscan_df.RDS", dir_script))
 
 
 if (FALSE){
-  floodscan_df <- readRDS("%s/data/floodscan_df.RDS", dir_script))
+  floodscan_df <- readRDS(sprintf("%s/data/floodscan_df.RDS", dir_script))
   n = 111
   ggplot(floodscan_df, aes_string(y = names(floodscan_df[n]), x = "date")) + geom_line()
 }
